@@ -1,34 +1,11 @@
 //
-// https://leetcode.com/problems/3sum/
+// https://leetcode.com/problems/3sum-closest/
 //
 
 #[allow(unused)]
 struct Solution;
 
 impl Solution {
-    fn binary_search(sorted: &[i32], elem: i32) -> Option<usize> {
-        let mut left = 0;
-        let mut right = sorted.len() - 1;
-
-        loop {
-            let mid = (left + right) / 2;
-
-            if sorted[mid] < elem {
-                left = mid + 1;
-            } else if sorted[mid] > elem {
-                right = mid;
-            } else {
-                return Some(mid);
-            }
-
-            if left == mid || left > right {
-                break;
-            }
-        }
-
-        None
-    }
-
     pub fn three_sum_closest(nums: Vec<i32>, target: i32) -> i32 {
         let mut sorted = nums.clone();
         sorted.sort();

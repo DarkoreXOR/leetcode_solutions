@@ -1,5 +1,5 @@
 //
-// https://leetcode.com/problems/count-sorted-vowel-strings/submissions/865909050/
+// https://leetcode.com/problems/count-sorted-vowel-strings/
 //
 
 #[allow(unused)]

@@ -5,6 +5,7 @@
 #[allow(unused)]
 struct Solution;
 
+#[allow(unused)]
 impl Solution {
     pub fn f() -> i32 {
         42
